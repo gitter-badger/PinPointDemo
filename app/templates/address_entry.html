@@ -1,0 +1,12 @@
+<!-- extend from base layout -->
+{% extends "basic.html" %}
+
+{% block content %}
+  <form action="" method="post" name="login">
+      {{ form.hidden_tag() }}
+      <p>
+          {{ form.address_entry(size=80) }}<br>
+      </p>
+      <p><input type="submit" value="Geocode!"></p>
+  </form>
+{% endblock %}
