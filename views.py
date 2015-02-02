@@ -17,7 +17,6 @@ def demo():
     	try:
     		# print '\tTrying:(%s)' % form.address_entry.data
     		results = e.geocode(form.address_entry.data)
-		print results # debug->lat/lon is getting rounded...
     		if results['lat'] and results['lon']: 
     			marker = "var marker = L.marker([%s, %s]).addTo(map);" % (results['lat'],results['lon'])
     			lat = results['lat']
@@ -32,4 +31,3 @@ def demo():
                             marker = marker,
                             form = form
                             )
-

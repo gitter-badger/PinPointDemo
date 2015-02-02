@@ -1,1 +1,3 @@
-flask/*
+venv/*
+app/PinPointGeocoder/*
+*.pyc
