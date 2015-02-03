@@ -1,0 +1,32 @@
+<!-- index.html created by skessler-->
+
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="app/app.css">
+
+<head>
+    <meta charset="utf-8">
+    <title>PinPoint Geocoder - Angular Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script data-main="app/main.js" src="node_modules/requirejs/require.js"></script>
+</head>
+
+<body>
+
+<div class="navbar navbar-default">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="home">PinPoint Geocoder</a>
+    </div>
+
+    <div class="btn-group" dropdown is-open="status.isopen">
+        <button type="button" class="btn btn-primary dropdown-toggle navbar-btn" dropdown-toggle ng-disabled="disabled">A drop down</button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a ui-sref="#">idk we might want one</a></li>
+        </ul>
+    </div>
+</div>
+
+<div ui-view></div>
+</body>
+</html>
+
