@@ -5,8 +5,8 @@
 (function() {
     'use strict';
 
-    var moduleName = 'pinpoint.geoLocation',
-        angularDependencies = ['ui.router', 'pinpoint.geoLocation-router'];
+    var moduleName = 'pinpoint.geo',
+        angularDependencies = ['ui.router'];
 
     define([
         'require',
