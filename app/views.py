@@ -27,7 +27,7 @@ def demo():
         except:
             results = None
 
-    return render_template('address_entry.html',
+    return render_template('geoLocation/address_entry.html',
                            lat=lat,
                            lon=lon,
                            results=results,
