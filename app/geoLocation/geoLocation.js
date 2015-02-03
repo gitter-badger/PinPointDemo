@@ -16,14 +16,12 @@
 
         var module = angular.module(moduleName, angularDependencies);
 
-        function mapCtrl($scope, $http, $q) {
-        
-        }
 
 
-            console.log('pinpoint has loaded the mao!');
 
-        module.controller('mapCtrl', ['$scope', '$http', '$q', mapCtrl]);
+        console.log('pinpoint has loaded the mao!');
+
+//        module.controller('mapCtrl', ['$scope', '$http', '$q', mapCtrl]);
 
         return module;
     });

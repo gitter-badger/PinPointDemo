@@ -13,20 +13,21 @@
 
 <body>
 
-<div class="navbar navbar-default">
-    <div class="navbar-header">
-        <a class="navbar-brand" ui-sref="home">PinPoint Geocoder</a>
+    <div class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" ui-sref="home">PinPoint Geocoder</a>
+        </div>
+
+        <div class="btn-group" dropdown is-open="status.isopen">
+            <button type="button" class="btn btn-primary dropdown-toggle navbar-btn" dropdown-toggle ng-disabled="disabled">A drop down</button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a ui-sref="#">idk we might want one</a>
+                </li>
+            </ul>
+        </div>
     </div>
 
-    <div class="btn-group" dropdown is-open="status.isopen">
-        <button type="button" class="btn btn-primary dropdown-toggle navbar-btn" dropdown-toggle ng-disabled="disabled">A drop down</button>
-        <ul class="dropdown-menu" role="menu">
-            <li><a ui-sref="#">idk we might want one</a></li>
-        </ul>
-    </div>
-</div>
-
-<div ui-view></div>
+    <div ui-view></div>
 </body>
-</html>
 
+</html>

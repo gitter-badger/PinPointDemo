@@ -2,13 +2,12 @@
  * Created by skessler on 2/2/15.
  */
 
-
 (function() {
     'use strict';
 
     var moduleName = 'pinpoint.navbar',
 
-        angularDependencies = ['ui.router','ui.bootstrap'];
+        angularDependencies = ['ui.router', 'ui.bootstrap'];
 
     define([
         'require',
