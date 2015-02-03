@@ -1,0 +1,20 @@
+{
+  "name": "PinPointDemo",
+  "version": "1.0.0",
+  "description": "Demo Website for PinPoint Geocoder",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taurenk/PinPointDemo.git"
+  },
+  "author": "taurenk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taurenk/PinPointDemo/issues"
+  },
+  "homepage": "https://github.com/taurenk/PinPointDemo"
+}
