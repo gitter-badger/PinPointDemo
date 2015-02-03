@@ -7,3 +7,6 @@ PinPointDemo.iml
 npm-debug.log
 node_modules
 .idea
+.sass-cache
+app/app.css
+app/app.css.map
