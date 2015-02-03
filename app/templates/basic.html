@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 
     <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-    
+
 
   </head>
 
@@ -48,7 +48,7 @@
     <div class="container">
       <div class="starter-template">
         <h1>PinPoint Geocoder - NY Address Demo</h1>
-        <p class="lead">Enter an address below and PinPoint will geocode it!</p> 
+        <p class="lead">Enter an address below and PinPoint will geocode it!</p>
 	<p>This demo only works for New York address currently (had to save space, sorry!)</p>
 	<p>Example: 6 caputo dr, manorville, ny 19949</p>
         <p>
@@ -62,7 +62,7 @@
         {% endif %}
       {% endwith %}
       {% block content %}{% endblock %}
-      
+
       {% if results %}
         <ul>
             <li>{{ results }} </li>
@@ -76,8 +76,8 @@
     <div class="starter-template">
       <div id="map" style="width: 400px; height: 400px; position:relative";></div>
         <script>
-      
-        var map = L.map('map').setView([ {{lat}}, {{lon}}], 13);  
+
+        var map = L.map('map').setView([ {{lat}}, {{lon}}], 13);
         L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
           maxZoom: 18,
           attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
@@ -93,7 +93,7 @@
             .setContent("You clicked the map at " + e.latlng.toString())
             .openOn(map);
         }
-        
+
          {% if marker %}
          {{ marker }}
          {% endif %}
